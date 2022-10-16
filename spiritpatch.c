@@ -1,7 +1,8 @@
-@@ -384,6 +384,14 @@ int main(int argc, char** argv) {
+@@ -384,7 +384,15 @@ int main(int argc, char** argv) {
         }
 
         memset(uuid, '\0', 41);
+-       memcpy(uuid, list[0], 40);
 +       if (list[0])
 +         {
 +           memcpy(uuid, list[0], 40);
