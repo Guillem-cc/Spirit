@@ -2,7 +2,6 @@
         }
 
         memset(uuid, '\0', 41);
--       memcpy(uuid, list[0], 40);
 +       if (list[0])
 +         {
 +           memcpy(uuid, list[0], 40);
